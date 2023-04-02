@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Bandross</string>
+    <string name="title">Fun Way to More Know About Bandung</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="forgotpassword">Forgot Password?</string>
+    <string name="sigin">Sign in</string>
+    <string name="sigup">Sign up</string>
+    <string name="or">OR</string>
+    <string name="fullname">Fullname</string>
+    <string name="email">Email</string>
+    <string name="phone">Phone Number</string>
+    <string name="ticket">Ticket</string>
+    <string name="route">Route</string>
+    <string name="Profile">Profile</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="list_bandross">
+        <item>List Bandross</item>
+        <item>Bandross Kuning</item>
+        <item>Bandross Hijau</item>
+        <item>Bandross Biru</item>
+        <item>Bandross Merah Muda</item>
+        <item>Bandross Ungu</item>
+    </string-array>
+</resources>
