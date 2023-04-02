@@ -51,12 +51,14 @@
         app:layout_constraintTop_toBottomOf="@id/title"
         app:layout_constraintWidth_percent="0.7" />
 
-    <EditText
+    <TextView
         android:id="@+id/inputbox_fullname"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:textColor="@color/white"
         app:layout_constraintHeight_percent="0.06"
-        android:gravity="bottom"
+        android:textAlignment="center"
+        android:gravity="center"
         app:layout_constraintTop_toBottomOf="@+id/input_fullname"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintLeft_toRightOf="@+id/input_fullname"
@@ -79,12 +81,14 @@
         app:layout_constraintTop_toBottomOf="@id/inputbox_fullname"
         app:layout_constraintWidth_percent="0.7" />
 
-    <EditText
+    <TextView
         android:id="@+id/inputbox_username"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:textColor="@color/white"
         app:layout_constraintHeight_percent="0.06"
-        android:gravity="bottom"
+        android:textAlignment="center"
+        android:gravity="center"
         app:layout_constraintTop_toBottomOf="@+id/input_username"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintLeft_toRightOf="@+id/input_username"
@@ -107,12 +111,14 @@
         app:layout_constraintTop_toBottomOf="@id/inputbox_username"
         app:layout_constraintWidth_percent="0.7" />
 
-    <EditText
+    <TextView
         android:id="@+id/inputbox_email"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintHeight_percent="0.06"
-        android:gravity="bottom"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textColor="@color/white"
         app:layout_constraintTop_toBottomOf="@+id/input_email"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintLeft_toRightOf="@+id/input_email"
@@ -135,12 +141,14 @@
         app:layout_constraintTop_toBottomOf="@id/inputbox_email"
         app:layout_constraintWidth_percent="0.7" />
 
-    <EditText
+    <TextView
         android:id="@+id/inputbox_password"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintHeight_percent="0.06"
-        android:gravity="bottom"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:gravity="center"
         app:layout_constraintTop_toBottomOf="@+id/input_password"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintLeft_toRightOf="@+id/input_password"
@@ -163,12 +171,14 @@
         app:layout_constraintTop_toBottomOf="@id/inputbox_password"
         app:layout_constraintWidth_percent="0.7" />
 
-    <EditText
+    <TextView
         android:id="@+id/inputbox_phone"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintHeight_percent="0.06"
-        android:gravity="bottom"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textColor="@color/white"
         app:layout_constraintTop_toBottomOf="@+id/input_phone"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintLeft_toRightOf="@+id/input_phone"

@@ -58,7 +58,9 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintHeight_percent="0.06"
-        android:gravity="bottom"
+        android:padding="10dp"
+        android:gravity="center"
+        android:textAlignment="textStart"
         app:layout_constraintTop_toBottomOf="@+id/input_username"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintLeft_toRightOf="@+id/input_username"
@@ -87,7 +89,9 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintHeight_percent="0.06"
-        android:gravity="bottom"
+        android:padding="10dp"
+        android:gravity="center"
+        android:textAlignment="textStart"
         app:layout_constraintTop_toBottomOf="@+id/input_password"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintLeft_toRightOf="@+id/input_password"
@@ -95,7 +99,7 @@
         app:layout_constraintEnd_toEndOf="@+id/title"
         android:background="@drawable/shapegrey"/>
 
-    <EditText
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/forgotpassword"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
@@ -103,6 +107,7 @@
         android:text="@string/forgotpassword"
         android:textColor="@color/red"
         android:textSize="12dp"
+        android:background=""
         app:layout_constraintEnd_toEndOf="@+id/inputbox_password"
         app:layout_constraintHeight_percent="0.05"
         app:layout_constraintTop_toBottomOf="@+id/inputbox_password" />
