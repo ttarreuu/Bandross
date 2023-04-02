@@ -35,7 +35,7 @@
         android:layout_height="0dp"
         android:layout_marginHorizontal="50dp"
         android:layout_marginStart="4dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="25dp"
         android:gravity="start"
         android:text="Name"
         android:textColor="@color/white"
@@ -190,7 +190,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="50dp"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="15dp"
         android:fontFamily="@font/nunito_sans"
         android:gravity="top"
         android:text="Harga Tiket = Rp.20.000,- /org \n\nAnak - anak diatas 3 tahun harap masukan kedalam kolom total passanger karena telah dikenakan tiket."
@@ -212,11 +212,12 @@
         android:text="Saya telah membaca serta menyetujui harga serta syarat dan ketentuan yang berlaku"
         android:textColor="@color/black"
         android:textSize="15dp"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="15dp"
         android:background="@drawable/shapewhite"
         android:padding="10dp"/>
 
     <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_book"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintHeight_percent="0.06"
@@ -225,7 +226,7 @@
         app:layout_constraintStart_toStartOf="@id/sk"
         app:layout_constraintEnd_toEndOf="@id/sk"
         android:text="Book"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="20dp"
         android:textColor="@color/red"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
