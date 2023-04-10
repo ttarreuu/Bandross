@@ -2,20 +2,19 @@ package com.example.bandross;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-public class MainActivity2 extends AppCompatActivity {
+public class SignupActivity extends AppCompatActivity {
 
     private EditText et_fullname, et_username, et_email, et_password, et_phone;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main2);
+        setContentView(R.layout.activity_signup);
 
         et_fullname = findViewById(R.id.inputbox_fullname);
         et_username = findViewById(R.id.inputbox_username);

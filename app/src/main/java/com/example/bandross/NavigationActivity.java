@@ -10,13 +10,13 @@ import android.view.MenuItem;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
 
-public class MainActivity3 extends AppCompatActivity {
+public class NavigationActivity extends AppCompatActivity {
 
     BottomNavigationView bottomNav;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main3);
+        setContentView(R.layout.activity_navigation);
 
 
         bottomNav = findViewById(R.id.bottom_nav);
