@@ -3,6 +3,7 @@ package com.example.bandross;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.navigation.Navigation;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,11 +11,6 @@ import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.TextView;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link ProfileFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
 public class ProfileFragment extends Fragment {
 
     private TextView tv_fullname, tv_username, tv_email, tv_password, tv_phone;
@@ -36,13 +32,14 @@ public class ProfileFragment extends Fragment {
         tv_password = view.findViewById(R.id.inputbox_password);
         tv_phone = view.findViewById(R.id.inputbox_phone);
 
-        Bundle bundle = getArguments();
+        NavigationActivity activity = (NavigationActivity) getActivity();
+        Bundle bundle = activity.getProfileData();
         if(bundle != null){
-            String fullname = bundle.getString("i_fullname");
-            String username = bundle.getString("i_username");
-            String email = bundle.getString("i_email");
-            String password = bundle.getString("i_password");
-            String phone = bundle.getString("i_phone");
+            String fullname = bundle.getString("fullName");
+            String username = bundle.getString("username");
+            String email = bundle.getString("email");
+            String password = bundle.getString("password");
+            String phone = bundle.getString("phoneNumber");
 
             tv_fullname.setText(fullname);
             tv_username.setText(username);

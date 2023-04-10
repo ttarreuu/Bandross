@@ -107,7 +107,6 @@
         android:text="@string/forgotpassword"
         android:textColor="@color/red"
         android:textSize="12dp"
-        android:background=""
         app:layout_constraintEnd_toEndOf="@+id/inputbox_password"
         app:layout_constraintHeight_percent="0.05"
         app:layout_constraintTop_toBottomOf="@+id/inputbox_password" />

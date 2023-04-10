@@ -2,6 +2,7 @@ package com.example.bandross;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -26,22 +27,20 @@ public class SignupActivity extends AppCompatActivity {
         btn_signup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String fullname = et_fullname.getText().toString();
+                String fullName = et_fullname.getText().toString();
                 String username = et_username.getText().toString();
                 String email = et_email.getText().toString();
                 String password = et_password.getText().toString();
-                String phone = et_phone.getText().toString();
+                String phoneNumber = et_phone.getText().toString();
 
-                ProfileFragment profileFragment = new ProfileFragment();
-                Bundle bundle = new Bundle();
-                bundle.putString("i_fullname", fullname);
-                bundle.putString("i_username", username);
-                bundle.putString("i_email", email);
-                bundle.putString("i_password", password);
-                bundle.putString("i_phone", phone);
-                profileFragment.setArguments(bundle);
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, profileFragment).commit();
-
+                Intent intent = new Intent(getBaseContext(), NavigationActivity.class);
+                // Pass data
+                intent.putExtra("username", username);
+                intent.putExtra("email", email);
+                intent.putExtra("fullName", fullName);
+                intent.putExtra("password", password);
+                intent.putExtra("phoneNumber", phoneNumber);
+                startActivity(intent);
 
             }
         });
